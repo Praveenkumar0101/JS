@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+
+
+      // 11.Create a function that returns an array of strings sorted by length in ascending order.
+      // Example:
+            // sortByLength(["a", "ccc", "dddd", "bb"]) ➞ ["a", "bb", "ccc", "dddd"]
+
+            var a=["aa","ccc","dddd","b"]
+            var b=""
+            for(i=0;i<a.length;i++){
+                for(j=0;j<a.length;j++){
+                    if(a[i].length<a[j].length){
+                       c=a[i]
+                       a[i]=a[j]
+                       a[j]=c
+                }
+            }
+            }
+                console.log(a)
+
+               12 Create a function that takes an array of arrays with numbers. Return a new (single) array with the largest numbers of each.
+            Example:
+            findLargestNums([[4, 2, 7, 1], [20, 70, 40, 90], [1, 2, 0]]) ➞ [7, 90, 2]
+
+            var a=[[1,20,34],[40,65,14],[95,55,21]]
+            var c=[]
+            for(i=0;i<a.length;i++){
+                var b=0
+                for(j=0;j<a[i].length;j++){
+                    if(b<a[i][j]){
+                    b=a[i][j]
+                    }
+                }
+                c.push(b)
+            }
+            console.log(c)
+
+            13.second highest number in array
+
+            var a=[10,60,30,10,20]
+            for(i=a.length-1;i>=0;i--){
+                if(a[i]!=a[i-1]){
+                console.log(a[i-1])
+                break;
+            }
+            }
+
+            13.1 second highest number with arrow
+
+            var a=[1,2,3,4,5]
+            b=a.sort((a,b)=>(b-a))
+            c=b.length-0
+            console.log(c)
+
+
+            13.2 second largest number
+            var a=[10,60,30,10,20]
+            // for(i=a.length-1;i>=0;i--){
+            //     if(a[i]!=a[i-1]){
+            //     console.log(a[i-1])
+            //     break;
+            // }
+            // }
+
+            23. accending order using loop
+
+            let a = '12345';
+            let b = '';
+            let i = a.length - 1;
+
+            while (i >= 0) {
+                b += a[i];
+                i--;
+            }
+
+            console.log(b);
+
+            18.Given a string, create a function to reverse the case. All lower-cased letters should be upper-cased, and vice versa.
+            Example:
+            reverseCase("Happy Birthday") ➞ "hAPPY bIRTHDAY"
+
+            var a="Happy Birthday"
+            var c=""
+            for(i=0;i<a.length;i++){
+                if(a[i]==a[i].toUpperCase()){
+                  c=c+a[i].toLowerCase()
+                }
+                else{
+                    c=c+a[i].toUpperCase()
+                }
+            }
+                  console.log(c)
+
+
+            22.C Program to find factorial of number.
+
+            var a=+prompt("enter any number :")
+            var fact=1;
+            for(i=1;i<=a;i++){
+                fact=fact*i
+            }
+            console.log(fact)
+
+            21.Program to find greatest of three numbers(using ternery operator).
+
+            Input:  4 8 2
+            Output: 8 is gretest
+
+            var a=+prompt("enter a value")
+            var b=+prompt("enter b value")
+            var c=+prompt("enter c value")
+            if(a>b && b>c){
+                console.log("a is greater value")
+            }
+            else if(b>a && b>c){
+                console.log("b is greater value")
+            }
+            else if(c>a && c>b){
+                console.log("c is greater value")
+            }
+            21.1
+             var a=+prompt("enter a value :")
+            var b=+prompt("enter b value :")
+            var c=+prompt("enter c value :")
+              a>b ? console.log("a is greater"): b>c ? console.log("b i greater"):console.log("c is greater")
+
+              25.C Program to Calculate the Power of a Number(using loop only).
+
+
+            var n=5;
+            var p=3;
+            for(i=0;i<p;i++){
+                b=n**p
+            }
+            console.log(b)
+
+            29. Program to find a missing number
+
+            Input:  n=5(length of array), arr= [5,3,1,4]
+            Output: 2 is missing
+
+            var a=[2,4,5]
+            for(i=0;i<a.length-1;i++){
+                if(a[i+1]!=a[i]+1){
+                console.log(a[i]+1)
+            }
+            }
+    </script>
+  </body>
+</html>

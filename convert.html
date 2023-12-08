@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//coverting small letter to cap letter
+// var a="pdrpedpre"
+//  var temp=""
+//  for(i=0;i<=a.length-1;i++){
+//      if(a[i]=='p'){
+//      temp=temp+(a[i].toUpperCase())
+//  }
+//  else{
+//      temp=temp+a[i]
+//  }
+//  }
+//  console.log(temp)
+
+  //palindrom
+  
+var name="praveen"
+var a=0;
+for(i=0;i<name.length-1;i++){
+    if(name[i]==name[name.length-(i=i+1)]){
+            a=a+1
+    }
+}
+if(a==name.length){
+    console.log("palindrome")
+}
+else{
+    console.log("not palindrom")
+}
+
+
+// saparate some letters in strings
+let a=["hello","o0kkk"]
+for(i=0;i<=a.length;i++){
+console.log(a[i]);
+console.log(a[i].slice(1,3));
+a.push(a[i].slice(1,3))
+}
+console.log(a)
+
+
+    </script>
+</body>
+</html>
