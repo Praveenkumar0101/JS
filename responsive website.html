@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Website</title>
+</head>
+<style>
+    body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    /* Responsive styles */
+    @media screen and (max-width: 600px) {
+      nav a {
+        float: none;
+        width: 100%;
+        text-align: left;
+      }
+    }
+
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+img {
+    max-width: auto;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+    
+
+
+
+
+</style>
+<body>
+
+    
+<nav>
+    <a href="#Home">Home</a>
+    <a href="#Pictures">Pictures</a>
+    <a href="#Location">Location</a>
+    <a href="#About">About</a>
+  </nav>
+    <header>
+        <h1>My Responsive Website</h1>
+    </header>
+   <div id="Home">
+    <h4>@ Collection of animal pics :</h4>
+</div>
+<div id="Pictures">
+    <h4> Animals' body lengths range from 8.5 μm (0.00033 in) to 33.6 m (110 ft). They have complex ecologies and interactions with each other and their environments, forming intricate food webs. The scientific study of animals is known as zoology, and the study of animal behaviors is known as ethology</h4>
+   </div>
+    <section class="main-content">
+        <img src="https://th.bing.com/th/id/OIP.QHQqJpPhz6co98WB7_angwHaE8?rs=1&pid=ImgDetMain" alt="Image 1">
+        <img src="https://wallup.net/wp-content/uploads/2016/01/202352-animals-macaws-nature-closeup-birds-parrot.jpg" alt="Image 2" width="400px">
+        <img src="https://th.bing.com/th/id/R.ff48a83252fffe64b35fc2ab3c3e6073?rik=69yMTKUKBhWTFg&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2016%2f01%2f262485-animals-nature-fox-wildlife-snow.jpg&ehk=dR38a3tJ1JeIq%2bqJyAKFEpz9y8kxD316njMZCDWb930%3d&risl=&pid=ImgRaw&r=0" alt="" width="400px">
+        <img src="https://th.bing.com/th/id/R.46d30e2e63c9c582c0bda169efe53b4a?rik=UyD2EMrnvQHhPw&riu=http%3a%2f%2fwww.digital-images.net%2fImages%2fWildAnimalPark%2fLion_HS7149LGsigned.jpg&ehk=v4JSaGEauPdvhZ0yMRT8jRHgH21DcoGS0nM8RC%2bQ3mk%3d&risl=&pid=ImgRaw&r=0" alt="" width="400px">
+        <img src="https://th.bing.com/th/id/R.c934a3a79f21f3ea463f7f07cf7bf864?rik=tcV4CArADrTgAw&riu=http%3a%2f%2fwallpapercave.com%2fwp%2f8v2Y98w.jpg&ehk=yZYxq2wYiuHgVPhgDtQKoXS2kzXilnzhpeSN2qyVOsI%3d&risl=&pid=ImgRaw&r=0" alt=""  width="400px">
+        <img src="https://th.bing.com/th/id/OIP.WpRmFAMvZIWjJQW3TGSktgHaEo?rs=1&pid=ImgDetMain" alt="" width="400px">
+       
+        <br>
+        <br>
+        <!-- <div id="Location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.2711872134278!2d78.44928247500916!3d17.350678983530322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb97c6c008fa9d%3A0x7b71bb447d86245b!2sNehru%20Zoological%20Park%20Hyderabad!5e0!3m2!1sen!2sin!4v1702466737196!5m2!1sen!2sin"  height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>  -->
+     <br>
+    <div id="About">
+        <h4>
+            Domestic and wild animals deserve safety and security. Hence, the expertise of highly professional vets is a demand to treat such animals under serious conditions. Veterinaska Fakulteta is one of the remarkable and creative designs of veterinary websites. It has a beautiful background of different types of animals on every section. It also implements a nice transition effect from one section to another. Apart from that, it’s also easier for a user to navigate the website using the fixed numerals on the left sidebar that serves as a menu. Moreover, the website also implements smooth animation upon scrolling, animated counter, social media integration, and more. It also comes with a super clean and neat blog section.
+        </h4>
+    </div>
+
+    </section>
+ <br>
+ <br>
+ <br>
+    <footer>
+        <p>&copy; Praveen</p>
+    </footer>
+</body>
+</html>
