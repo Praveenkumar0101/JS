@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+         
+         let sett=localStorage.getItem("fake")
+         console.log(sett)
+         let arr=JSON.parse(sett)
+         console.log(arr)
+
+         
+         let mg1=document.createElement("h1")
+         mg1.innerHTML=arr.id
+         document.body.appendChild(mg1)
+
+         let mg2=document.createElement("h1")
+         mg2.innerHTML=arr.title
+         document.body.appendChild(mg2)
+
+         
+         let mg3=document.createElement("h5")
+         mg3.innerHTML="Price :" + arr.price
+         document.body.appendChild(mg3)
+
+         
+         let mg=document.createElement("img")
+         mg.setAttribute("src",arr.image)
+         document.body.appendChild(mg)
+         mg.style.width="100px"
+    </script>
+</body>
+</html>
